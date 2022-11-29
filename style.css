@@ -102,6 +102,15 @@ label[for="search"] {
   padding: 2rem;
 }
 
+@media screen and (max-width: 768px) {
+  .flex__box {
+    padding: 1rem;
+  }
+  .btngrp__button {
+    padding: 0.4rem 0.8rem;
+  }
+}
+
 p {
   margin-bottom: 0 !important;
 }
@@ -116,7 +125,112 @@ p {
   --background__primary: #15306f;
 }
 
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 /* utility classes ends */
+
+/* navbar start */
+
+.navbar__main {
+  display: flex;
+  justify-content: space-around;
+  background: var(--background__primary);
+  color: var(--white);
+  padding: 1rem;
+  text-transform: capitalize;
+  align-items: center;
+}
+
+.hamburger {
+  display: none;
+}
+
+.main__nav {
+  display: flex;
+  gap: 1rem;
+}
+
+.main__nav--navlinks {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.main__nav--navlinks a {
+  color: var(--white);
+  font-size: 1rem;
+}
+
+.navbar__button {
+  display: flex;
+  gap: 1rem;
+}
+
+@media screen and (max-width: 1000px) {
+  .navbar__main {
+    justify-content: space-between;
+  }
+
+  .hamburger[aria-expanded="false"] + .main__nav {
+    display: none;
+    animation: fadeIn 0.3s ease-in-out;
+  }
+
+  .main__nav {
+    position: absolute;
+    width: auto;
+    top: 6rem;
+    left: 2rem;
+    right: 2rem;
+    padding: 2rem;
+    flex-direction: column;
+    background: hsl(257deg, 27%, 26%);
+    border-radius: 0.5rem;
+    margin-left: 0;
+    -webkit-animation: fadeIn 0.5s ease-in-out;
+    animation: fadeIn 0.3s ease-in-out;
+  }
+
+  .main__nav--navlinks {
+    flex-direction: column;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+  .navbar__button {
+    flex-direction: column;
+  }
+  .navbar__button button {
+    padding: 0.4rem 0.8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .navbar__logo {
+    width: 50%;
+  }
+}
+
+/* navbar end */
 
 .landing__page {
   background: #15306f;
@@ -137,6 +251,7 @@ p {
   letter-spacing: 0px;
   opacity: 1;
   font-size: 2rem;
+  font-weight: 400;
 }
 
 .landing__box {
@@ -171,6 +286,34 @@ p {
 
 .stat__box--about {
   max-width: 10rem;
+}
+
+@media screen and (max-width: 900px) {
+  .landing__page--info {
+    flex-direction: column;
+    padding: 1rem;
+    padding-top: 3rem;
+  }
+
+  .landing__box {
+    width: 95%;
+  }
+  .landing__image {
+    width: 70%;
+  }
+  .landing__heading {
+    font-size: 1.5rem;
+  }
+
+  .landing__page--stats {
+    flex-direction: column;
+    padding: 1rem;
+    gap: 2rem;
+  }
+
+  .landing__page--stats p {
+    text-align: justify;
+  }
 }
 
 /* cients section */
