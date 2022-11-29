@@ -21,7 +21,7 @@
       <button
         class="hamburger"
         id="togglemenu"
-        aria-expanded="true"
+        aria-expanded="false"
         aria-label="toggle-menu"
         onClick="setToggleNav()"
       >
@@ -184,7 +184,7 @@
     <section class="portfolio flex__box">
       <p class="secondary__heading">PORTFOLIO</p>
       <h2 class="primary__heading">Latest Work</h2>
-      <div class="btngrp">
+      <div class="btngrp portfolio__filter">
         <button class="button__secondary">Binance SC</button>
         <button class="button__secondary">Binance SC</button>
         <button class="button__secondary">Binance SC</button>
@@ -298,89 +298,48 @@
         <button>contact Us</button>
       </article>
       <div class="faq__questions">
-        <div class="accordion" id="accordionExample">
-          <div class="accordion-item">
-            <h2 class="accordion-header" id="headingOne">
-              <button
-                class="accordion-button"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#collapseOne"
-                aria-expanded="true"
-                aria-controls="collapseOne"
-              >
-                What is smart contract security?
-              </button>
-            </h2>
-            <div
-              id="collapseOne"
-              class="accordion-collapse collapse show"
-              aria-labelledby="headingOne"
-              data-bs-parent="#accordionExample"
-            >
-              <div class="accordion-body">
-                Smart Contract Security is a set of best practices to identify
-                bugs & vulnerabilities in the code that can lead to security
-                breaches. These loopholes have lead to huge financial losses
-                recently.
-              </div>
-            </div>
+        <details open>
+          <summary>How do you create an accordion?</summary>
+          <div>
+            Easy! As long as you don't have to support IE11 or older browsers
+            you could use <code>&lt;details&gt;</code> and
+            <code>&lt;summary&gt;</code> natively.
           </div>
-          <div class="accordion-item">
-            <h2 class="accordion-header" id="headingTwo">
-              <button
-                class="accordion-button collapsed"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#collapseTwo"
-                aria-expanded="false"
-                aria-controls="collapseTwo"
-              >
-                What is smart contract security?
-              </button>
-            </h2>
-            <div
-              id="collapseTwo"
-              class="accordion-collapse collapse"
-              aria-labelledby="headingTwo"
-              data-bs-parent="#accordionExample"
-            >
-              <div class="accordion-body">
-                Smart Contract Security is a set of best practices to identify
-                bugs & vulnerabilities in the code that can lead to security
-                breaches. These loopholes have lead to huge financial losses
-                recently.
-              </div>
-            </div>
+        </details>
+        <details>
+          <summary>What if I have to support IE11 or older browsers?</summary>
+          <div>
+            No worries. The fallback for these elements is quite good. They will
+            display as open. You won't get the open/close mechanism, but you
+            won't lose any content either.
           </div>
-          <div class="accordion-item">
-            <h2 class="accordion-header" id="headingThree">
-              <button
-                class="accordion-button collapsed"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#collapseThree"
-                aria-expanded="false"
-                aria-controls="collapseThree"
-              >
-                What is smart contract security?
-              </button>
-            </h2>
-            <div
-              id="collapseThree"
-              class="accordion-collapse collapse"
-              aria-labelledby="headingThree"
-              data-bs-parent="#accordionExample"
-            >
-              <div class="accordion-body">
-                Smart Contract Security is a set of best practices to identify
-                bugs & vulnerabilities in the code that can lead to security
-                breaches. These loopholes have lead to huge financial losses
-                recently.
-              </div>
-            </div>
+        </details>
+        <details>
+          <summary>
+            What type of content can I have inside one of these?
+          </summary>
+          <div>
+            Almost anything you'd like. The <code>&lt;details&gt;</code> element
+            allows all
+            <a
+              href="https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/Content_categories#flow_content"
+              target="_blank"
+              >flow content</a
+            >, which is basically everything.
           </div>
-        </div>
+        </details>
+        <details>
+          <summary>How does it work?</summary>
+          <div>
+            The <code>&lt;details&gt;</code> element encapsulates the
+            <code>&lt;summary&gt;</code> element. The
+            <code>&lt;summary&gt;</code> becomes the 'label' for the
+            <code>&lt;details&gt;</code> and acts like a button. When clicked,
+            the attribute <code>open</code> is added to the
+            <code>&lt;details&gt;</code> element, making it display. You can
+            therefore style the open and closed states seperately if you'd like.
+          </div>
+        </details>
       </div>
     </section>
     <!-- faq section end-->
@@ -425,7 +384,7 @@
     <section class="contact">
       <div class="contact__cta flex__box">
         <div class="cta__info">
-          <img src="./images/hashing.svg" alt="" />
+          <img src="./images/hashing.svg" alt="hashingbits" />
           <p>
             DeFi & NFT Hacks, CTFs, and Blockchain Security Insights Straight to
             your Inbox.
@@ -434,15 +393,19 @@
             Explore our weekly newsletter: HashingBits. Stay updated on
             everything we’re publishing. Stand a step ahead.
           </p>
-          <form action="">
-            <input type="email" name="" id="" />
+          <form class="contact__form" action="">
+            <input
+              class="contact__email"
+              type="email"
+              placeholder="youremail@gmail.com"
+            />
           </form>
           <p>
             Your email has been successfully registered, headlines will be sent
             to you soon.
           </p>
         </div>
-        <img src="./images/ctaImage.svg" alt="" />
+        <img class="cta__decoration" src="./images/ctaImage.svg" alt="" />
       </div>
       <div class="contact__join flex__box">
         <div class="joinus flex__box">
@@ -452,13 +415,17 @@
               Help us in our journey to secure web3 by joining our team of
               talented individuals spread across the globe.
             </p>
-            <button>Applyt Now</button>
+            <button class="joinus__button btngrp__button">Apply Now</button>
           </div>
-          <img src="./images/pic.svg" alt="" />
+          <img class="joinus__image" src="./images/pic.svg" alt="" />
         </div>
       </div>
     </section>
     <!-- contact section end-->
+
+    <!-- footer section -->
+
+    <!-- footer section end-->
 
     <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
 
