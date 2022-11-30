@@ -29,19 +29,27 @@
       </button>
       <div class="main__nav">
         <ul class="main__nav--navlinks">
-          <li>
-            <a aria-label="features" href="#"> features </a>
+          <li class="navlinks__dropdown">
+            <a aria-label="features" href="#"> Audio Services </a>
+            <ul class="dropdown__box">
+              <li class="dropdown__item"><a href="#">list item</a></li>
+              <li class="dropdown__item"><a href="#">list item</a></li>
+              <li class="dropdown__item"><a href="#">list item</a></li>
+            </ul>
           </li>
           <li>
             <a aria-label="pricing" href="#"> pricing </a>
           </li>
           <li>
+            <a aria-label="pricing" href="#"> pricing </a>
+          </li>
+          <li class="navlinks__dropdown">
             <a aria-label="resources" href="#"> resources </a>
           </li>
         </ul>
         <div class="navbar__button">
-          <button class="btngrp__button">Request Free Quote</button>
-          <button class="btngrp__button">Explore Services</button>
+          <button class="btngrp__button button__padded">Portfolio</button>
+          <button class="btngrp__button">Request An Audit</button>
         </div>
       </div>
     </nav>
@@ -58,7 +66,9 @@
           <p>QuillAudits, Making web3 a safer place</p>
           <div class="btngrp">
             <button class="btngrp__button">Request Free Quote</button>
-            <button class="btngrp__button">Explore Services</button>
+            <button class="btngrp__button button__transparent">
+              Explore Services
+            </button>
           </div>
         </article>
         <div class="landing__image">
@@ -76,12 +86,12 @@
           <p class="stat__box--about">Amount Lost To DeFi Hacks in 2021</p>
         </div>
         <div class="stat__box">
-          <span class="stat__box--no">$12.8B</span>
-          <p class="stat__box--about">Amount Lost To DeFi Hacks in 2021</p>
+          <span class="stat__box--no">600K</span>
+          <p class="stat__box--about">Lines of Codes Secured by QuillAudits</p>
         </div>
         <div class="stat__box">
-          <span class="stat__box--no">$12.8B</span>
-          <p class="stat__box--about">Amount Lost To DeFi Hacks in 2021</p>
+          <span class="stat__box--no">$14.6B</span>
+          <p class="stat__box--about">Amount Protected By QuillAudits</p>
         </div>
       </div>
     </section>
@@ -97,6 +107,7 @@
         <img class="client__image" src="./images/client.png" alt="client" />
         <img class="client__image" src="./images/Coincrunch.png" alt="client" />
         <img class="client__image" src="./images/client.png" alt="client" />
+        <img class="client__image" src="./images/Coincrunch.png" alt="client" />
         <img class="client__image" src="./images/Coincrunch.png" alt="client" />
       </div>
     </section>
@@ -120,13 +131,29 @@
             potential vulnerabilities. Ethereum Polygon BSC Solana EOS
           </p>
           <ul>
-            <li>Eth</li>
-            <li>Poly</li>
-            <li>BSC</li>
-            <li>Solana</li>
-            <li>EOS</li>
+            <li>
+              <img src="https://img.icons8.com/color/48/null/ethereum.png" />Eth
+            </li>
+            <li>
+              <img src="https://img.icons8.com/color/48/null/deltohedron.png" />
+              Poly
+            </li>
+            <li>
+              <img src="https://img.icons8.com/color/48/null/solidity.png" />
+              BSC
+            </li>
+            <li>
+              <img
+                src="https://img.icons8.com/color/48/null/metamask-logo.png"
+              />
+              Solana
+            </li>
+            <li>
+              <img src="https://img.icons8.com/color/48/null/ethereum.png" />
+              EOS
+            </li>
           </ul>
-          <button class="btngrp__button">Explore</button>
+          <button class="btngrp__button button__padded">Explore</button>
         </article>
       </div>
       <div class="service__box flex__box">
@@ -145,7 +172,7 @@
             pentesting approach and dynamic blockchain analysis.
           </p>
 
-          <button class="btngrp__button">Learn More</button>
+          <button class="btngrp__button button__padded">Learn More</button>
         </article>
       </div>
       <div class="service__box flex__box">
@@ -164,11 +191,21 @@
             Diligence NFT Due Diligence Rug Pull Due Diligence
           </p>
           <ul>
-            <li>Eth Due Diligence</li>
-            <li>Poly Due Diligence</li>
-            <li>BSC Due Diligence</li>
+            <li>
+              <img src="https://img.icons8.com/color/48/null/deltohedron.png" />
+              Eth Due Diligence
+            </li>
+            <li>
+              <img
+                src="https://img.icons8.com/color/48/null/metamask-logo.png"
+              />Poly Due Diligence
+            </li>
+            <li>
+              <img src="https://img.icons8.com/color/48/null/solidity.png" />BSC
+              Due Diligence
+            </li>
           </ul>
-          <button class="btngrp__button">Explore</button>
+          <button class="btngrp__button button__padded">Explore</button>
         </article>
       </div>
 
@@ -190,6 +227,49 @@
         <button class="button__secondary">Binance SC</button>
         <button class="button__secondary">Binance SC</button>
       </div>
+
+      <div class="portfolio__work flex__box">
+        <div class="work__item">
+          <img src="./images/work.png" alt="" />
+          <p>StackOS Audit Report</p>
+          <div class="navbar__button">
+            <button class="btngrp__button button__padded button__transparent">
+              Portfolio
+            </button>
+            <button class="btngrp__button button__padded button__transparent">
+              Download
+            </button>
+          </div>
+        </div>
+        <div class="work__item">
+          <img src="./images/work.png" alt="" />
+          <p>StackOS Audit Report</p>
+          <div class="navbar__button">
+            <button class="btngrp__button button__padded button__transparent">
+              Portfolio
+            </button>
+            <button class="btngrp__button button__padded button__transparent">
+              Download
+            </button>
+          </div>
+        </div>
+        <div class="work__item">
+          <img src="./images/work.png" alt="" />
+          <p>StackOS Audit Report</p>
+          <div class="navbar__button">
+            <button class="btngrp__button button__padded button__transparent">
+              Portfolio
+            </button>
+            <button class="btngrp__button button__padded button__transparent">
+              Download
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <button class="btngrp__button button__padded button__transparent">
+        More Projects
+      </button>
     </section>
     <!-- portfolio section end-->
 
@@ -220,28 +300,28 @@
         <p class="secondary__heading">MENTIONS</p>
         <h2 class="primary__heading">As Featured In</h2>
         <div class="mentioned flex__box">
-          <div class="mentioned__in flex__box">
-            <img src="./images/Coincrunch.png" alt="Coincrunch" />
+          <div class="mentioned__in">
+            <img src="./images/client.png" alt="Coincrunch" />
             <a href="#">Readme</a>
           </div>
-          <div class="mentioned__in flex__box">
-            <img src="./images/Coincrunch.png" alt="Coincrunch" />
+          <div class="mentioned__in">
+            <img src="./images/client.png" alt="Coincrunch" />
             <a href="#">Readme</a>
           </div>
-          <div class="mentioned__in flex__box">
-            <img src="./images/Coincrunch.png" alt="Coincrunch" />
+          <div class="mentioned__in">
+            <img src="./images/client.png" alt="Coincrunch" />
             <a href="#">Readme</a>
           </div>
-          <div class="mentioned__in flex__box">
-            <img src="./images/Coincrunch.png" alt="Coincrunch" />
+          <div class="mentioned__in">
+            <img src="./images/client.png" alt="Coincrunch" />
             <a href="#">Readme</a>
           </div>
-          <div class="mentioned__in flex__box">
-            <img src="./images/Coincrunch.png" alt="Coincrunch" />
+          <div class="mentioned__in">
+            <img src="./images/client.png" alt="Coincrunch" />
             <a href="#">Readme</a>
           </div>
-          <div class="mentioned__in flex__box">
-            <img src="./images/Coincrunch.png" alt="Coincrunch" />
+          <div class="mentioned__in">
+            <img src="./images/client.png" alt="Coincrunch" />
             <a href="#">Readme</a>
           </div>
         </div>
@@ -256,7 +336,10 @@
 
       <div class="testimonials__cards flex__box">
         <div class="testimonials__cards--item flex__box">
-          <h3>StackOS</h3>
+          <h3>
+            <img src="https://img.icons8.com/color/48/null/ethereum.png" />
+            StackOS
+          </h3>
           <p>
             Very professional and timed delivery. Also very prompt in responses
             and queries.
@@ -265,7 +348,11 @@
           <p>CEO, StackOS</p>
         </div>
         <div class="testimonials__cards--item flex__box">
-          <h3>StackOS</h3>
+          <h3>
+            <img
+              src="https://img.icons8.com/color/48/null/ethereum.png"
+            />StackOS
+          </h3>
           <p>
             Very professional and timed delivery. Also very prompt in responses
             and queries.
@@ -274,7 +361,11 @@
           <p>CEO, StackOS</p>
         </div>
         <div class="testimonials__cards--item flex__box">
-          <h3>StackOS</h3>
+          <h3>
+            <img
+              src="https://img.icons8.com/color/48/null/ethereum.png"
+            />StackOS
+          </h3>
           <p>
             Very professional and timed delivery. Also very prompt in responses
             and queries.
@@ -299,45 +390,27 @@
       </article>
       <div class="faq__questions">
         <details open>
-          <summary>How do you create an accordion?</summary>
+          <summary>What is smart contract security?</summary>
           <div>
-            Easy! As long as you don't have to support IE11 or older browsers
-            you could use <code>&lt;details&gt;</code> and
-            <code>&lt;summary&gt;</code> natively.
+            Smart Contract Security is a set of best practices to identify bugs
+            & vulnerabilities in the code that can lead to security breaches.
+            These loopholes have lead to huge financial losses recently.
           </div>
         </details>
         <details>
-          <summary>What if I have to support IE11 or older browsers?</summary>
+          <summary>What is smart contract security?</summary>
           <div>
-            No worries. The fallback for these elements is quite good. They will
-            display as open. You won't get the open/close mechanism, but you
-            won't lose any content either.
+            Smart Contract Security is a set of best practices to identify bugs
+            & vulnerabilities in the code that can lead to security breaches.
+            These loopholes have lead to huge financial losses recently.
           </div>
         </details>
         <details>
-          <summary>
-            What type of content can I have inside one of these?
-          </summary>
+          <summary>What is smart contract security?</summary>
           <div>
-            Almost anything you'd like. The <code>&lt;details&gt;</code> element
-            allows all
-            <a
-              href="https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/Content_categories#flow_content"
-              target="_blank"
-              >flow content</a
-            >, which is basically everything.
-          </div>
-        </details>
-        <details>
-          <summary>How does it work?</summary>
-          <div>
-            The <code>&lt;details&gt;</code> element encapsulates the
-            <code>&lt;summary&gt;</code> element. The
-            <code>&lt;summary&gt;</code> becomes the 'label' for the
-            <code>&lt;details&gt;</code> and acts like a button. When clicked,
-            the attribute <code>open</code> is added to the
-            <code>&lt;details&gt;</code> element, making it display. You can
-            therefore style the open and closed states seperately if you'd like.
+            Smart Contract Security is a set of best practices to identify bugs
+            & vulnerabilities in the code that can lead to security breaches.
+            These loopholes have lead to huge financial losses recently.
           </div>
         </details>
       </div>
@@ -400,7 +473,8 @@
               placeholder="youremail@gmail.com"
             />
           </form>
-          <p>
+          <p class="safe__email">
+            <img src="https://img.icons8.com/color/48/null/ok--v1.png" />
             Your email has been successfully registered, headlines will be sent
             to you soon.
           </p>
@@ -410,12 +484,16 @@
       <div class="contact__join flex__box">
         <div class="joinus flex__box">
           <div class="joinus__info flex__box">
-            <h3>Join Hands With us to secure Web3 Together</h3>
+            <h3 class="prpriimary__heading">
+              Join Hands With us to secure Web3 Together
+            </h3>
             <p>
               Help us in our journey to secure web3 by joining our team of
               talented individuals spread across the globe.
             </p>
-            <button class="joinus__button btngrp__button">Apply Now</button>
+            <button class="joinus__button btngrp__button button__padded">
+              Apply Now
+            </button>
           </div>
           <img class="joinus__image" src="./images/pic.svg" alt="" />
         </div>
@@ -431,37 +509,38 @@
           <img src="./images/hash.svg" alt="" />
           Quillhash delivers enterprise grade blockchain technology to leading
           companies worldwide.
+
+          <div class="flag__box">
+            <img src="./images/flag1.png" alt="" />
+            <img src="./images/flag2.png" alt="" />
+          </div>
         </div>
         <div class="foot__child--links">
           <div class="foot__links">
             <h4>Explore</h4>
             <ul>
               <li>Careers</li>
+              <li>Courses</li>
               <li>Blockchain Security CTF</li>
               <li>QuillAudits Partner Program</li>
-              <li>QuillAudits Partner Program</li>
-              <li>QuillAudits Partner Program</li>
+              <li>Referral Program</li>
             </ul>
           </div>
           <div class="foot__links">
             <h4>Explore</h4>
             <ul>
-              <li>Careers</li>
-              <li>Blockchain Security CTF</li>
-              <li>QuillAudits Partner Program</li>
-              <li>QuillAudits Partner Program</li>
-              <li>QuillAudits Partner Program</li>
+              <li>Smart Contract Auditing</li>
+              <li>Blockchain Pen Testing</li>
+              <li>Due Diligence</li>
             </ul>
           </div>
           <div class="foot__links">
             <h4>Explore</h4>
-            <ul>
-              <li>Careers</li>
-              <li>Blockchain Security CTF</li>
-              <li>QuillAudits Partner Program</li>
-              <li>QuillAudits Partner Program</li>
-              <li>QuillAudits Partner Program</li>
-            </ul>
+            <p>
+              LG 006, DLF Grand Mall, Mehrauli Gurgaon Road, Near Sikanderpur
+              DLF Phase1, Sector 28, Gurugram, Haryana - 122002
+            </p>
+            <a href="mailto:someone@example.com">contact@quillaudits.com</a>
           </div>
         </div>
       </div>
@@ -470,36 +549,56 @@
         <ul class="socials">
           <li>
             <a href="#">
-              <img src="./images/facebook.svg" alt="" />
+              <img src="./images/1.svg" alt="" />
             </a>
           </li>
           <li>
             <a href="#">
-              <img src="./images/facebook.svg" alt="" />
+              <img src="./images/2.svg" alt="" />
             </a>
           </li>
           <li>
             <a href="#">
-              <img src="./images/facebook.svg" alt="" />
+              <img src="./images/3.svg" alt="" />
             </a>
           </li>
           <li>
             <a href="#">
-              <img src="./images/facebook.svg" alt="" />
+              <img src="./images/4.svg" alt="" />
             </a>
           </li>
           <li>
             <a href="#">
-              <img src="./images/facebook.svg" alt="" />
+              <img src="./images/5.png" alt="" />
             </a>
           </li>
           <li>
             <a href="#">
-              <img src="./images/facebook.svg" alt="" />
+              <img src="./images/6.png" alt="" />
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="./images/7.png" alt="" />
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="./images/8.svg" alt="" />
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="./images/9.svg" alt="" />
             </a>
           </li>
         </ul>
       </div>
+
+      <p>
+        All Rights Reserved. © Copyright 2022. QuillHash Technologies Private
+        Limited
+      </p>
     </footer>
     <!-- footer section end-->
 
