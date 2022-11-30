@@ -69,11 +69,13 @@ label[for="search"] {
     rgba(63, 122, 240, 1) 100%
   );
   border: 1px solid var(--blue);
+  transition: 0.3s ease-in-out;
 }
 
 .btngrp__button:hover {
   border: 1px solid var(--blue);
   background: transparent;
+  transition: 0.3s ease-in-out;
 }
 
 .button__secondary {
@@ -92,6 +94,7 @@ label[for="search"] {
 .button__transparent {
   background: transparent;
   border: 1px solid var(--blue);
+  transition: 0.3s ease-in-out;
 }
 .button__transparent:hover {
   background: linear-gradient(
@@ -105,6 +108,7 @@ label[for="search"] {
 
 .button__padded {
   padding: 0.5rem 2.5rem;
+  transition: 0.3s ease-in-out;
 }
 
 .primary__heading {
