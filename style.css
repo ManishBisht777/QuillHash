@@ -862,6 +862,12 @@ details[open] summary:before {
   color: var(--blue);
 }
 
+.applynow__btn:hover {
+  background: transparent;
+  transition: 0.3s ease-in-out;
+  color: var(--white);
+  border: 1px solid var(--white);
+}
 @media screen and (max-width: 700px) {
   .contact__cta {
     padding: 4rem 1rem;
